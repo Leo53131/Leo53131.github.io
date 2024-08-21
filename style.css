@@ -1,0 +1,63 @@
+header{
+    background-color: #007bff;
+    color: #fff;
+    font: optional;
+    font-size: 130%;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+body{
+    background: rgb(233, 231, 231);
+    justify-content: center;
+    display: flex;
+    font-size:  100%;
+
+}
+.container{
+    width: 80vw; /* Ancho del contenedor */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    background-color: #fff; /* Color de fondo del contenedor */
+    padding: 20px; /* Espacio entre el contenido y el borde del contenedor */
+    box-sizing: border-box;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80em;
+    font-size: 2.5vh; 
+    font: optional;
+    
+}
+.text{
+    flex: 1;
+    padding: 2em;
+    overflow: hidden;
+    text-align: justify;
+    font: optional;
+    font-size: 110%;
+   
+    
+}
+h2 {
+    position: relative;
+    padding-bottom: 20px;
+    margin: 0; /* Eliminar el margen por defecto del h1 */   
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 100%; /* Ancho de la línea (ajústalo según tus necesidades) */
+    height: 0.1em;
+    background-color: #3498db; /* Color de la línea */
+    transform: translateX(-50%); /* Centrar la línea */
+}
+p{
+    width: 100%; /* Ajusta el ancho del párrafo al 100% del contenedor */
+    word-wrap: break-word;
+    font-size: 1.1em;
+}
